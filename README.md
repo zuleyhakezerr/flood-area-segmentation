@@ -1,6 +1,8 @@
 # 🌊 Sel Alanı Segmentasyonu - Ödev 5
 
 Bu proje, uydu/hava fotoğrafları üzerinden sel basmış alanları piksel düzeyinde tespit etmeyi (semantic segmentation) amaçlamaktadır.
+<img width="488" height="271" alt="Ekran Resmi 2025-12-18 14 45 42" src="https://github.com/user-attachments/assets/12cbe420-c82a-4574-83fc-e81bb5c6bb4b" />
+
 
 ## 📋 İçerik
 
@@ -24,6 +26,8 @@ Bu proje, uydu/hava fotoğrafları üzerinden sel basmış alanları piksel düz
 - **IoU (Jaccard Index)**: Intersection over Union
 - **Binary Crossentropy**: Piksel bazlı kayıp
 - **Combined Loss**: BCE + Dice Loss kombinasyonu
+- 
+<img width="697" height="490" alt="Ekran Resmi 2025-12-16 21 33 16" src="https://github.com/user-attachments/assets/5489dd8c-ff95-40fe-961c-f830794498da" />
 
 ## 🚀 Kurulum
 
@@ -68,6 +72,8 @@ history = train_model(model, train_dataset, val_dataset, 'DeepLabV3+', epochs=30
 # Değerlendir ve görselleştir
 evaluate_model(model, test_dataset, 'DeepLabV3+')
 visualize_predictions(model, test_dataset, 'DeepLabV3+')
+<img width="1291" height="833" alt="Ekran Resmi 2025-12-17 19 56 19" src="https://github.com/user-attachments/assets/06be7bb6-f08c-444d-be9e-c00c9f1dc406" />
+
 ```
 
 ## 📁 Dosya Yapısı
@@ -107,6 +113,8 @@ class Config:
     VAL_SPLIT = 0.15      # Validation oranı
     TEST_SPLIT = 0.15     # Test oranı
 ```
+![Uploading Ekran Resmi 2025-12-17 19.56.19.png…]()
+
 
 ## 📝 Notlar
 
@@ -115,8 +123,6 @@ class Config:
 - Veri artırma (augmentation) eğitim setine otomatik uygulanır
 - Early stopping ile overfitting önlenir
 
-## 👤 Geliştirici
 
-Züleyha - Görüntü İşleme Ödevi 5
 
 
