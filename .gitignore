@@ -1,0 +1,36 @@
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Model weights (büyük dosyalar)
+*.keras
+*.h5
+*.pkl
+
+# Dataset (çok büyük - ayrı indirilmeli)
+archive/
+
+# Log files
+*.log
+*_log.txt
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Diğer
+*.pdf
+
